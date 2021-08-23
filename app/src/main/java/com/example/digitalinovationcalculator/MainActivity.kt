@@ -1,5 +1,6 @@
 package com.example.digitalinovationcalculator
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
@@ -27,8 +28,10 @@ class MainActivity : AppCompatActivity() {
 
             if(media >= 6 && faltas <= 10){
                 result.setText("Aluno foi Aprovado" + "\n" + "Nota Final:" + media + "\n" + "Faltas:" + faltas )
+                result.setTextColor(Color.GREEN)
             }else{
                 result.setText("Aluno foi Reprovado" + "\n" + "Nota Final:" + media + "\n" + "Faltas:" + faltas )
+                result.setTextColor(Color.RED)
             }
         }
 
