@@ -6,13 +6,92 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <EditText
+        android:id="@+id/etNota1"
+        android:layout_width="300dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints="postalCode"
+        android:background="@color/GrisClaro"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/nota_1"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv" />
+
+    <EditText
+        android:id="@+id/etNota2"
+        android:layout_width="300dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="24dp"
+        android:autofillHints="postalCode"
+        android:ems="10"
+        android:background="@color/GrisClaro"
+        android:hint="@string/nota_2"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNota1" />
+
+    <EditText
+        android:id="@+id/etFaltas"
+        android:layout_width="300dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="28dp"
+        android:autofillHints="postalCode"
+        android:background="@color/GrisClaro"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/faltas"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNota2" />
+
     <TextView
+        android:id="@+id/tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="68dp"
+        android:gravity="center"
+        android:text="@string/calculadora_da_media_de_notas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/btCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="@color/black"
+        android:text="Calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etFaltas" />
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="64dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btCalcular" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
