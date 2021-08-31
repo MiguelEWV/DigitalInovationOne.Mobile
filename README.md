@@ -1,2 +1,2 @@
 # DigitalInovationOne.MobileInter
-Calculadora feita na Digital Inovation One no bootcamp Mobile do Inter e Santander
+Calculadora da media feita na Digital Inovation One no bootcamp Mobile do Inter e Santander
